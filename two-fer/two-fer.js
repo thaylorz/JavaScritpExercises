@@ -3,4 +3,4 @@
 // convenience to get you started writing code faster.
 //
 
-export const twoFer = name => typeof name !== "undefined" ? `One for ${name}, one for me.` : `One for you, one for me.`;
+export const twoFer = (name = 'you') => `One for ${name}, one for me.`;
