@@ -92,16 +92,10 @@ export const translate = (rna) => {
 
 	const codons = rna.match(/.{1,3}/g)
 	const aminoAcidNames = codons.map(getAminoAcidName)
+	const stopCodon = aminoAcidNames.findIndex(name => name === 'Stop')
 
-	const stop = aminoAcidNames.findIndex(name => name === 'Stop')
-
-	if (stop !== -1) {
-		return aminoAcidNames.slice(0, stop)
-	}
-
-	if (aminoAcidNames.some(name => !name)) {
-		throw new Error('Invalid codon')
-	}
+	if (stopCodon !== -1) aminoAcidNames.slice(0, stopCodon)
+	if (aminoAcidNames.some(name => !name)) throw new Error('Invalid codon')
 
 	return aminoAcidNames
 }
