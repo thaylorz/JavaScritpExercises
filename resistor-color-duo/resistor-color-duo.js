@@ -5,4 +5,4 @@
 
 export const RESISTOR_COLORS = ['black', 'brown', 'red', 'orange', 'yellow', 'green', 'blue', 'violet', 'grey', 'white'];
 
-export const decodedValue = values => Number(values.slice(0, 2).map(color => RESISTOR_COLORS.indexOf(color)).join(''));
+export const decodedValue = ([firstColor, secondColor]) => RESISTOR_COLORS.indexOf(firstColor) * 10 + RESISTOR_COLORS.indexOf(secondColor);
