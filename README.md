@@ -29,3 +29,7 @@ Given a year, report if it is a leap year.
 ### [Gigasecond](https://github.com/thaylorz/javascript-exercises/tree/main/gigasecond)
 
 Given a moment, determine the moment that would be after a gigasecond has passed.
+
+### [RNA Transcription](https://github.com/thaylorz/javascript-exercises/tree/main/rna-transcription)
+
+Given a DNA strand, return its RNA Complement Transcription.
