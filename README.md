@@ -33,3 +33,11 @@ Given a moment, determine the moment that would be after a gigasecond has passed
 ### [RNA Transcription](https://github.com/thaylorz/javascript-exercises/tree/main/rna-transcription)
 
 Given a DNA strand, return its RNA Complement Transcription.
+
+### [Reverse String](https://github.com/thaylorz/javascript-exercises/tree/main/reverse-string)
+
+Reverse a string
+
+### [Triangle](https://github.com/thaylorz/javascript-exercises/tree/main/triangle)
+
+Determine if a triangle is equilateral, isosceles, or scalene.
